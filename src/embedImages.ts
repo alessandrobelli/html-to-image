@@ -25,12 +25,12 @@ function embedBackground(
     })
 }
 
-function embedImageNode(
+async function embedImageNode(
   clonedNode: HTMLElement,
   options: OptionsType,
 ): Promise<HTMLElement> {
   if (!(clonedNode instanceof HTMLImageElement) || isDataUrl(clonedNode.src)) {
-    return Promise.resolve(clonedNode)
+    return await Promise.resolve(clonedNode)
   }
 
   return Promise.resolve(clonedNode.src)
