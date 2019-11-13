@@ -8,6 +8,9 @@
     "lib/*.d.ts",
     "lib/*.js"
   ],
+  "precommit": [
+    "build"
+  ],
   "directories": {
     "lib": "lib/"
   },
