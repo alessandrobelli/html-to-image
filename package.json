@@ -54,6 +54,6 @@
     "prebuild": "npm run lint",
     "prepublish": "npm run build",
     "precommit": "npm run lint",
-    "postinstall": "ls && cd node_modules/html-to-image && npm install && npm run build"
+    "postinstall": "npm install && npm run build"
   }
 }
